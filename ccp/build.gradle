@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.vanniktech.maven.publish'
+group = 'com.github.Brucimus83'
 
 android {
     compileSdkVersion 30
