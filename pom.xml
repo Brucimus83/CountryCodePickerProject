@@ -8,6 +8,14 @@
     <artifactId>CountryCodePickerProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>Brucimus83.CountryCodePickerProject</id>
+            <name>CountryCodePickerProject</name>
+            <url>https://github.com/Brucimus83/CountryCodePickerProject</url>
+        </repository>
+    </distributionManagement>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
