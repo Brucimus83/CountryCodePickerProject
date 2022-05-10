@@ -11,8 +11,8 @@
     <distributionManagement>
         <repository>
             <uniqueVersion>false</uniqueVersion>
-            <id>Brucimus83.CountryCodePickerProject</id>
-            <name>CountryCodePickerProject</name>
+            <id>github</id>
+            <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/Brucimus83/CountryCodePickerProject</url>
         </repository>
     </distributionManagement>
