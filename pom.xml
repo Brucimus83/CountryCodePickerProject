@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Brucimus83</groupId>
-    <artifactId>CountryCodePickerProject</artifactId>
+    <groupId>brucimus83</groupId>
+    <artifactId>countrycodepickerproject</artifactId>
     <version>Release</version>
 
     <distributionManagement>
