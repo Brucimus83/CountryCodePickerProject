@@ -2462,6 +2462,7 @@ public class CountryCodePicker extends RelativeLayout {
         DUTCH("nl"),
         ENGLISH("en"),
         FARSI("fa"),
+        FINNISH("fi"),
         FRENCH("fr"),
         GERMAN("de"),
         GREEK("el"),
