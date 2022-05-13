@@ -18,6 +18,9 @@ android {
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
     }
+    lintOptions {
+        abortOnError false
+    }
     tasks.withType(Javadoc).all { enabled = false }
 }
 
