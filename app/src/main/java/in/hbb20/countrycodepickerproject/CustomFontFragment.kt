@@ -45,7 +45,7 @@ class CustomFontFragment: Fragment() {
 	}
 
 	private fun setTTFfont(ccp: CountryCodePicker, fontFileName: String) {
-		val typeFace = Typeface.createFromAsset(context!!.assets, fontFileName)
+		val typeFace = Typeface.createFromAsset(requireContext().assets, fontFileName)
 		ccp.setTypeFace(typeFace)
 	}
 

@@ -40,11 +40,11 @@ class CustomColorFragment: Fragment() {
 	}
 
 	private fun setClickListener() {
-		relativeColor1.setOnClickListener { setColor(1, getColor(context!!, R.color.color1)) }
+		relativeColor1.setOnClickListener { setColor(1, getColor(requireContext(), R.color.color1)) }
 
-		relativeColor2.setOnClickListener { setColor(2, getColor(context!!, R.color.color2)) }
+		relativeColor2.setOnClickListener { setColor(2, getColor(requireContext(), R.color.color2)) }
 
-		relativeColor3.setOnClickListener { setColor(3, getColor(context!!, R.color.color3)) }
+		relativeColor3.setOnClickListener { setColor(3, getColor(requireContext(), R.color.color3)) }
 
 		buttonNext.setOnClickListener { (activity as ExampleActivity).viewPager.currentItem = (activity as ExampleActivity).viewPager.currentItem + 1 }
 
@@ -70,7 +70,7 @@ class CustomColorFragment: Fragment() {
 		resetBG()
 
 		//set selected bg
-		val selectedBGColor = getColor(context!!, R.color.selectedTile)
+		val selectedBGColor = getColor(requireContext(), R.color.selectedTile)
 		when (selection) {
 			1 -> relativeColor1.setBackgroundColor(selectedBGColor)
 			2 -> relativeColor2.setBackgroundColor(selectedBGColor)
@@ -80,9 +80,9 @@ class CustomColorFragment: Fragment() {
 	}
 
 	private fun resetBG() {
-		relativeColor1.setBackgroundColor(getColor(context!!, R.color.dullBG))
-		relativeColor2.setBackgroundColor(getColor(context!!, R.color.dullBG))
-		relativeColor3.setBackgroundColor(getColor(context!!, R.color.dullBG))
+		relativeColor1.setBackgroundColor(getColor(requireContext(), R.color.dullBG))
+		relativeColor2.setBackgroundColor(getColor(requireContext(), R.color.dullBG))
+		relativeColor3.setBackgroundColor(getColor(requireContext(), R.color.dullBG))
 	}
 
 	private fun assignViews() {

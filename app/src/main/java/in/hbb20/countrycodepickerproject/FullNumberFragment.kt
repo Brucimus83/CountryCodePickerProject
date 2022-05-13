@@ -78,10 +78,10 @@ class FullNumberFragment: Fragment() {
 		ccpGetNumber.registerCarrierNumberEditText(editTextGetCarrierNumber)
 		ccpGetNumber.setPhoneNumberValidityChangeListener { isValidNumber ->
 			if (isValidNumber) {
-				imgValidity.setImageDrawable(getDrawable(context!!, R.drawable.ic_assignment_turned_in_black_24dp))
+				imgValidity.setImageDrawable(getDrawable(requireContext(), R.drawable.ic_assignment_turned_in_black_24dp))
 				tvValidity.text = "Valid Number"
 			} else {
-				imgValidity.setImageDrawable(getDrawable(context!!, R.drawable.ic_assignment_late_black_24dp))
+				imgValidity.setImageDrawable(getDrawable(requireContext(), R.drawable.ic_assignment_late_black_24dp))
 				tvValidity.text = "Invalid Number"
 			}
 		}
