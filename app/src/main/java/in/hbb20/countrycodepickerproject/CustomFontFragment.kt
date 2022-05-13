@@ -61,6 +61,6 @@ class CustomFontFragment: Fragment() {
 		ccp4 = rootView.findViewById(R.id.ccp4)
 		ccp5 = rootView.findViewById(R.id.ccp5)
 		ccp6 = rootView.findViewById(R.id.ccp6)
-		buttonNext = view!!.findViewById(R.id.button_next)
+		buttonNext = requireView().findViewById(R.id.button_next)
 	}
 }

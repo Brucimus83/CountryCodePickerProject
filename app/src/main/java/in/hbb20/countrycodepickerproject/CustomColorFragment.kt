@@ -86,12 +86,12 @@ class CustomColorFragment: Fragment() {
 	}
 
 	private fun assignViews() {
-		textViewTitle = view!!.findViewById(R.id.textView_title)
-		editTextPhone = view!!.findViewById(R.id.editText_phone)
-		ccp = view!!.findViewById(R.id.ccp)
-		relativeColor1 = view!!.findViewById(R.id.relative_color1)
-		relativeColor2 = view!!.findViewById(R.id.relative_color2)
-		relativeColor3 = view!!.findViewById(R.id.relative_color3)
-		buttonNext = view!!.findViewById(R.id.button_next)
+		textViewTitle = requireView().findViewById(R.id.textView_title)
+		editTextPhone = requireView().findViewById(R.id.editText_phone)
+		ccp = requireView().findViewById(R.id.ccp)
+		relativeColor1 = requireView().findViewById(R.id.relative_color1)
+		relativeColor2 = requireView().findViewById(R.id.relative_color2)
+		relativeColor3 = requireView().findViewById(R.id.relative_color3)
+		buttonNext = requireView().findViewById(R.id.button_next)
 	}
 }
